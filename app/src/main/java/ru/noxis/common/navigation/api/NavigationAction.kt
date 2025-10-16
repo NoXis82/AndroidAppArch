@@ -1,4 +1,4 @@
-package ru.noxis.common.navigation
+package ru.noxis.common.navigation.api
 
 import androidx.navigation.NavOptions
 import androidx.navigation.NavOptionsBuilder

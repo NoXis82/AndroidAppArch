@@ -1,4 +1,4 @@
-package ru.noxis.common.navigation
+package ru.noxis.common.navigation.api
 
 import kotlinx.coroutines.channels.ReceiveChannel
 

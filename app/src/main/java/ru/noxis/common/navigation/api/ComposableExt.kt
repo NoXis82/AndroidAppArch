@@ -1,4 +1,4 @@
-package ru.noxis.common.navigation
+package ru.noxis.common.navigation.api
 
 import androidx.compose.animation.AnimatedContentScope
 import androidx.compose.runtime.Composable
