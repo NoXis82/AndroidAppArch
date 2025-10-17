@@ -15,7 +15,7 @@ class MainViewModel @Inject constructor(
         router.toCreateDebit()
     }
 
-    fun transactions() {
-        router.toTransactions()
-    }
+//    fun transactions() {
+//        router.toTransactions()
+//    }
 }
