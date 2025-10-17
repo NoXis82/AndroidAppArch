@@ -14,8 +14,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.channels.consumeEach
+import ru.noxis.androidapparch.mediator.graph.composableAll
 import ru.noxis.androidapparch.ui.theme.AndroidAppArchTheme
 import ru.noxis.common.navigation.api.Navigator
+import ru.noxis.feature.screen.main.navigation.MainDirection
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -50,11 +52,11 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-//                    NavHost(
-//                        navController = navController,
-//                        startDestination = MainDirection.route,
-//                        builder = NavGraphBuilder::composableAll
-//                    )
+                    NavHost(
+                        navController = navController,
+                        startDestination = MainDirection.route,
+                        builder = NavGraphBuilder::composableAll
+                    )
                 }
             }
         }
