@@ -87,7 +87,7 @@ fun MainScreen(viewModel: MainViewModel = hiltViewModel()) {
 @Preview(showBackground = true)
 @Composable
 fun MainScreenPreview() {
-    AndroidAppArchTheme(darkTheme = false) {
+    AndroidAppArchTheme(darkTheme = true) {
         MainScreen(MainViewModel(object : MainRouter {
             override fun toTransactions() {
                 TODO("Not yet implemented")

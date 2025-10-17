@@ -2,10 +2,11 @@ package ru.noxis.androidapparch.mediator.graph
 
 import androidx.navigation.NavGraphBuilder
 import ru.noxis.feature.screen.main.composableToMain
+import ru.noxis.feature.screen.transactions.composableToTransactions
 
 fun NavGraphBuilder.composableAll() {
     composableToMain()
-//    composableToTransactions()
+    composableToTransactions()
 //    composableToDebitCreate()
 //    composableToCategoryCreate()
 //    composableToAccountCreate()
