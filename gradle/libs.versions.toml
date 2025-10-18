@@ -15,6 +15,7 @@ ksp = "2.2.10-2.0.2"
 room = "2.8.2"
 navigationVersion = "2.9.5"
 moshiVersion = "1.15.2"
+emoji2Version = "1.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -47,6 +48,11 @@ navigation-compose = { module = "androidx.navigation:navigation-compose", versio
 moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshiVersion" }
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshiVersion" }
 moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshiVersion" }
+#Emoji
+emoji2 = { module = "androidx.emoji2:emoji2", version.ref = "emoji2Version" }
+emoji2-emojipicker = { module = "androidx.emoji2:emoji2-emojipicker", version.ref = "emoji2Version" }
+emoji2-views = { module = "androidx.emoji2:emoji2-views", version.ref = "emoji2Version" }
+emoji2-views-helper = { module = "androidx.emoji2:emoji2-views-helper", version.ref = "emoji2Version" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -69,4 +75,10 @@ room = [
 moshi = [
     "moshi",
     "moshi-kotlin"
+]
+emoji = [
+    "emoji2",
+    "emoji2-emojipicker",
+    "emoji2-views",
+    "emoji2-views-helper"
 ]

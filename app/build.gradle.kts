@@ -59,6 +59,9 @@ dependencies {
     //Moshi
     implementation(libs.bundles.moshi)
     ksp(libs.moshi.kotlin.codegen)
+    //Emoji
+    implementation(libs.bundles.emoji)
+
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

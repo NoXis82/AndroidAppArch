@@ -5,7 +5,9 @@ import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
 import ru.noxis.feature.featurecase.category.api.GetDebitCategoriesFeatureCase
+import ru.noxis.feature.featurecase.category.api.SaveNewCategoryFeatureCase
 import ru.noxis.feature.featurecase.category.impl.GetDebitCategoriesFeatureCaseImpl
+import ru.noxis.feature.featurecase.category.impl.SaveNewCategoryFeatureCaseImpl
 
 @Module
 @InstallIn(ViewModelComponent::class)
@@ -13,4 +15,7 @@ interface CategoryFeatureCasesModule {
 
     @Binds
     fun bindGetListCategoriesFeatureCase(impl: GetDebitCategoriesFeatureCaseImpl): GetDebitCategoriesFeatureCase
+
+    @Binds
+    fun bindSaveCategoryFeatureCase(impl: SaveNewCategoryFeatureCaseImpl): SaveNewCategoryFeatureCase
 }
