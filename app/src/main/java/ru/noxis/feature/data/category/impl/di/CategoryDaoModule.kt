@@ -9,7 +9,7 @@ import ru.noxis.feature.data.category.impl.local.db.CategoryDao
 
 @Module
 @InstallIn(ViewModelComponent::class)
-internal class CategoryDaoModule {
+class CategoryDaoModule {
 
     @Provides
     fun provideCategoryDao(database: AppDatabase): CategoryDao = database.categoryDao()

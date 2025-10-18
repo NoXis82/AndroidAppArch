@@ -9,10 +9,11 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import ru.noxis.androidapparch.database.AppDatabase
 import ru.noxis.androidapparch.database.AppDatabase.Companion.DB_NAME
+import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-internal class AppDatabaseModule {
+class AppDatabaseModule {
 
     @Provides
     fun provideAppDatabase(@ApplicationContext appContext: Context): AppDatabase =

@@ -20,7 +20,6 @@ class DebitCreateViewModel @Inject constructor(
     private val router: DebitCreateRouter,
     private val getDebitCategories: GetDebitCategoriesFeatureCase,
 
-
     ) : ViewModel(), DebitCreateRouter by router {
 
     private val _state: MutableStateFlow<DebitCreateState> = MutableStateFlow(DebitCreateState())
@@ -64,11 +63,20 @@ class DebitCreateViewModel @Inject constructor(
     }
 
     fun onSelectedAccountFrom(account: Account) {
-        _state.update { state -> state.copy(from = account, to = state.to.takeUnless { it == account }) }
+        _state.update { state ->
+            state.copy(
+                from = account,
+                to = state.to.takeUnless { it == account })
+        }
     }
 
     fun onSelectedAccountTo(account: Account) {
-        _state.update { state -> state.copy(from = state.from.takeUnless { it == account }, to = account) }
+        _state.update { state ->
+            state.copy(
+                from = state.from.takeUnless { it == account },
+                to = account
+            )
+        }
     }
 
     fun onChangedDescription(newDescription: String) {

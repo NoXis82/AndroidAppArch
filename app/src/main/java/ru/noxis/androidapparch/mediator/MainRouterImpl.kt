@@ -1,6 +1,7 @@
 package ru.noxis.androidapparch.mediator
 
 import ru.noxis.common.navigation.api.Navigator
+import ru.noxis.feature.screen.debit.create.navigation.DebitCreateDirection
 import ru.noxis.feature.screen.main.navigation.MainRouter
 import ru.noxis.feature.screen.transactions.navigation.TransactionsDirection
 import javax.inject.Inject
@@ -14,7 +15,7 @@ class MainRouterImpl @Inject constructor(
     }
 
     override fun toCreateDebit() {
-        TODO("Not yet implemented")
+        navigator.navigate(DebitCreateDirection.createAction())
     }
 
 }

@@ -1,6 +1,9 @@
 package ru.noxis.common.di.context
 
+import dagger.Module
 import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Qualifier
 import kotlin.coroutines.CoroutineContext
 
@@ -20,6 +23,8 @@ annotation class DispatcherIO
 annotation class DispatcherLog
 
 
+@Module
+@InstallIn(SingletonComponent::class)
 class CoroutineContextModule {
     @Provides
     @DispatcherMain

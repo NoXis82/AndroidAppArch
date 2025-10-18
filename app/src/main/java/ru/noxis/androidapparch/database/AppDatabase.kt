@@ -9,7 +9,8 @@ import ru.noxis.feature.data.category.impl.local.db.CategoryEntity
     entities = [
         CategoryEntity::class,
     ],
-    version = 1
+    version = 1,
+    exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase(), CategoryDatabase {
 
